@@ -7,9 +7,7 @@ var client = new IAPVerifier();
 app.use(bodyParser.json())
 
 app.get('/', function(req, res) {
-	res.json({
-		'Hello': 'World!'
-	})
+	res.send('Use POST only')
 })
 
 app.post('/', function(req, res) {
