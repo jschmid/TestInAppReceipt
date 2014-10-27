@@ -18,7 +18,9 @@ app.post('/', function(req, res) {
 			console.log("Valid receipt");
 			console.log(msg);
 			console.log(data);
-			res.json({'res':'ok'});
+			res.json({
+				'res': 'ok'
+			});
 		} else {
 			console.log("Invalid receipt");
 			console.log(msg);
